@@ -1,3 +1,65 @@
+
 body {
     font-family: 'Inter', sans-serif;
+    color: #2B283A;
+}
+
+/*----------NAVBAR--------------*/
+.navbar--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F55A5A;
+}
+.navbar--logo {
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+}
+.navbar--tittle{
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+/*----------CARD--------------*/
+.card--container {
+    display: flex;
+    margin: 50px 20px;
+}
+.card--image {
+    width: 250px;
+    height: 336px;
+    border-radius: 5px;
+}
+.card--stats{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.card--site {
+    margin: 5px;
+}
+.card--google--site{
+    margin: 5px;
+    font-weight: normal;
+    color: #918E9B;
+}
+.card--info {
+    flex-direction: column;
+    margin: 40px 30px;
+}
+.pin {
+    width: 20px;
+    height: 20px;
+}
+.card--tittle{
+
+}
+.card--stay{
+    font-weight: bold;
+}
+.card--description{
+    width: auto;
+    
+
 }
