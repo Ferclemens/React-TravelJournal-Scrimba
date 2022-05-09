@@ -1,21 +1,21 @@
 import React from "react"
 
-export default function Card() {
+export default function Card(props) {
     return (
         <article className="card--container">    
             <div>
-                <img className="card--image" src="https://source.unsplash.com/WLxQvbMyfas"></img>
+                <img className="card--image" src={props.item.imagen}></img>
             </div>
             <div className="card--info">
                 <div className="card--stats">
                     <img className="pin" src="./img/miniplaceholder.png"></img>
-                    <h5 className="card--site">JAPAN</h5>
-                    <h5 className="card--google--site">View on Google Maps</h5>
+                    <h5 className="card--site">{props.item.country}</h5>
+                    <a className="card--google--site" href={props.item.maps}>View on Google Maps</a>
                 </div>
                 <div>
-                    <h1 className="card--tittle">Mount Fuji</h1>
-                    <p className="card--stay">12 Jan, 2021 - 24 Jan, 2021</p>
-                    <p className="card--description">Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet). Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists.</p>
+                    <h1 className="card--tittle">{props.item.place}</h1>
+                    <p className="card--stay">{props.item.stay}</p>
+                    <p className="card--description">{props.item.description}</p>
                 </div>
             </div>
         </article>

@@ -24,11 +24,12 @@ body {
 /*----------CARD--------------*/
 .card--container {
     display: flex;
+    align-items: center;
     margin: 50px 20px;
 }
 .card--image {
-    width: 250px;
-    height: 336px;
+    max-width: 350px;
+    height: 250px;
     border-radius: 5px;
 }
 .card--stats{
@@ -38,9 +39,12 @@ body {
 }
 .card--site {
     margin: 5px;
+    font-size: medium;
+    font-weight: normal;
 }
 .card--google--site{
     margin: 5px;
+    font-size: small;
     font-weight: normal;
     color: #918E9B;
 }
@@ -52,14 +56,9 @@ body {
     width: 20px;
     height: 20px;
 }
-.card--tittle{
-
-}
 .card--stay{
     font-weight: bold;
 }
 .card--description{
     width: auto;
-    
-
 }
